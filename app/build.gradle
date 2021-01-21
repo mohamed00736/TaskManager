@@ -34,8 +34,14 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.google.android.material:material:1.1.0'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    androidTestImplementation 'androidx.arch.core:core-testing:2.0.0'
+
+    testImplementation "android.arch.persistence.room:testing:1.0.0"
+    androidTestImplementation 'com.android.support.test:rules:1.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
     def room_version = "2.2.5"
     def lifecycle_version = "2.2.0"
     //def arch_version = "2.1.0"
@@ -45,6 +51,14 @@ dependencies {
   //  implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
     // LiveData
   //  implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+
+
+    //mockito
+    testImplementation "org.mockito:mockito-core:2.+"
+
+    //robolectric
+    testImplementation "org.robolectric:robolectric:4.4"
+
 
 
 
