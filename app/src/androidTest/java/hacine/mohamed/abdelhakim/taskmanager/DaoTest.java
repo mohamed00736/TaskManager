@@ -52,7 +52,7 @@ public class DaoTest {
         Note word = new Note("word","haha",1);
      //   Note word2 = new Note("word2","haha2",2);
         noteDao.insert(word);
-      //  noteDao.insert(word2);
+      //  noteDao.insert(word2)
 
 
         List<Note> noteList = LiveDataUtil.getValue(noteDao.getAllNotes());
